@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faGithub } from '@fortawesome/free-brands-svg-icons'
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons'
 import '../styles/fonts.css';
 import Grid from '@material-ui/core/Grid';
@@ -50,9 +50,12 @@ export default function HomePage() {
         <div className="whitespace"></div>
         <Grid container>
             <Grid item xs ={8}></Grid>
-        
+        <Grid item xs ={4}>
         <img src="ourphoto.jpg" style={{width: 300, height: 300, borderRadius: 150}}/>
+        <div style={{fontSize:25, textAlign:"center"}}><a style={{ textDecoration: 'none'}} href="https://docs.google.com/document/d/18cafRckwsBvu507Sv8Ge1CHlm5eAjGLMuCJb7teNZVM/edit?usp=sharing">Download resume</a></div>
+        </Grid>
         </Grid> 
+        
 
 
         <div className="whitespace"></div>
@@ -221,7 +224,35 @@ export default function HomePage() {
 <div className="whitespace"></div>
 
         
-            
+<div className="title" id="contact" style={{textAlign: 'center'}}>
+                <h3>Contact</h3>
+            </div>   
+
+    <Grid container spacing={2} direction="column" alignItems="center" justify="center">
+      <Grid>
+      <h3>Email address: warrengbrn@gmail.com</h3>
+      </Grid>
+      <Grid>
+      <h3>Phone number: 301-830-1095</h3>
+      </Grid>
+      </Grid>  
+
+      <Grid container spacing={2} direction="column" alignItems="center" justify="center">
+      <Grid item xs ={2}>
+      <h3><a href="https://github.com/wgbcamp">
+      <FontAwesomeIcon icon={faGithub} size='2x' />
+      </a>
+      </h3>
+      </Grid>
+      <Grid item xs ={2}>
+      <h3><a href="https://www.linkedin.com/in/warren-brown-4808b9132/">
+      <FontAwesomeIcon icon={faLinkedin} size='2x' />
+      </a>
+      </h3>
+      </Grid>
+      </Grid>
+    
+
 </div>
     )
   }

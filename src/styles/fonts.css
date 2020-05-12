@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700;900&display=swap');
+
+.body{
+    text-align: left;
+    font-size: 40px;
+}
+
+.title{
+    text-align: left;
+    font-size:50px;
+}
+.whitespace{
+    height: 10vh;
+}

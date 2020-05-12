@@ -110,7 +110,7 @@ export default function HomePage() {
       <CardActionArea>
         <CardMedia
           className={classes.media}
-          image="findyourway.jpg"
+          image="fyw.jpg"
           title="Find Your Way"
         />
         <CardContent>

@@ -34,7 +34,7 @@ const useStyles = makeStyles((theme) => ({
     fontFamily: 'Raleway',
     fontWeight: 900
 },
-}));
+})); 
 
 
 

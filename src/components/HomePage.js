@@ -132,10 +132,12 @@ export default function HomePage() {
           Find on Github
         </Button>
         </a>
+        <a href="https://new-hill.herokuapp.com/">
         <Button size="small" color="primary">
             <FontAwesomeIcon icon={faExternalLinkAlt} size='2x' />
           Check it out
         </Button>
+        </a>
       </CardActions>
     </Card>
         </Grid>

@@ -3,7 +3,7 @@ import HeaderBar from './components/HeaderBar';
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import HomePage from './components/HomePage';
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core';
-import { purple } from '@material-ui/core/colors';
+
 
 const theme = createMuiTheme({
   palette: {
@@ -22,9 +22,7 @@ function App() {
     <Router>
     <div >
       <HeaderBar/>
-      <Route exact path="/" component={HomePage} />
-      <Route exact path="/projects" component={HomePage} />
-      <Route exact path="/contact" component={HomePage} />
+      <HomePage/>
     </div>
     </Router>
     </MuiThemeProvider>

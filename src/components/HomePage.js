@@ -2,7 +2,6 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons'
-import '../styles/fonts.css';
 import Grid from '@material-ui/core/Grid';
 import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
@@ -12,6 +11,21 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
+
+import '../styles/fonts.css';
+import captionclown from '../images/captionclown.png';
+import css3 from '../images/css3.png';
+import eCommerce from '../images/e-commercemarketplace.png';
+import express from '../images/express.svg';
+import fyw from '../images/fyw.jpg';
+import html5 from '../images/html5.png';
+import jquery from '../images/jquery.png';
+import js from '../images/js.png';
+import mongodb from '../images/mongodb.png';
+import mysql from '../images/mysql.png';
+import node from '../images/node.svg';
+import ourphoto from '../images/ourphoto.jpg';
+import react from '../images/react.png';
 
 
 const useStyles = makeStyles({
@@ -49,7 +63,7 @@ export default function HomePage() {
         <Grid container>
             <Grid item xs ={8}></Grid>
         <Grid item xs ={4}>
-        <img src="ourphoto.jpg" style={{width: 300, height: 300, borderRadius: 150}}/>
+        <img src={ourphoto} style={{width: 300, height: 300, borderRadius: 150}}/>
         <div style={{fontSize:25, textAlign:"center"}}><a style={{ textDecoration: 'none'}} href="https://docs.google.com/document/d/18cafRckwsBvu507Sv8Ge1CHlm5eAjGLMuCJb7teNZVM/edit?usp=sharing">Download resume</a></div>
         </Grid>
         </Grid> 
@@ -64,11 +78,11 @@ export default function HomePage() {
             </div>
             </Grid>
             <Grid>
-                <img src="html5.png" style={{width: 150, marginRight: 10, marginLeft: 10}}/>
-                <img src="css3.png" style={{width: 110, height: 150, marginRight: 10, marginLeft: 10}}/>
-                <img src="js.png" style={{width: 140, height: 150, marginRight: 10, marginLeft: 10, borderRadius: 10}}/>
-                <img src="jquery.png" style={{width: 150, marginRight: 10, marginLeft: 10}}/>
-                <img src="react.png" style={{width: 230, height: 170, marginRight: 10, marginLeft: 10}}/>
+                <img src={html5} style={{width: 150, marginRight: 10, marginLeft: 10}}/>
+                <img src={css3} style={{width: 110, height: 150, marginRight: 10, marginLeft: 10}}/>
+                <img src={js} style={{width: 140, height: 150, marginRight: 10, marginLeft: 10, borderRadius: 10}}/>
+                <img src={jquery} style={{width: 150, marginRight: 10, marginLeft: 10}}/>
+                <img src={react} style={{width: 230, height: 170, marginRight: 10, marginLeft: 10}}/>
             </Grid>
         </Grid>
 
@@ -79,10 +93,10 @@ export default function HomePage() {
             </div>
             </Grid>
             <Grid>
-                <img src="node.svg" style={{width: 150, marginRight: 10, marginLeft: 10}}/>
-                <img src="express.svg" style={{width: 150, height: 100, marginRight: 10, marginLeft: 10}}/>
-                <img src="mysql.png" style={{width: 150, height: 100, marginRight: 10, marginLeft: 10, borderRadius: 10}}/>
-                <img src="mongodb.png" style={{width: 200, height: 65, marginRight: 10, marginLeft: 10}}/>
+                <img src={node} style={{width: 150, marginRight: 10, marginLeft: 10}}/>
+                <img src={express} style={{width: 150, height: 100, marginRight: 10, marginLeft: 10}}/>
+                <img src={mysql} style={{width: 150, height: 100, marginRight: 10, marginLeft: 10, borderRadius: 10}}/>
+                <img src={mongodb} style={{width: 200, height: 65, marginRight: 10, marginLeft: 10}}/>
                 {/* <img src="git.png" style={{width: 160, height: 60, marginRight: 10, marginLeft: 10}}/>
                 <img src="bash.png" style={{width: 144, height: 65, marginRight: 10, marginLeft: 10}}/> */}
             </Grid>
@@ -111,7 +125,7 @@ export default function HomePage() {
       <CardActionArea>
         <CardMedia
           className={classes.media}
-          image="fyw.jpg"
+          image={fyw}
           title="Find Your Way"
         />
         <CardContent>
@@ -151,7 +165,7 @@ export default function HomePage() {
 <CardActionArea>
 <CardMedia
   className={classes.media}
-  image="captionclown.png"
+  image={captionclown}
   title="Caption Clown"
 />
 <CardContent>
@@ -191,7 +205,7 @@ export default function HomePage() {
 <CardActionArea>
 <CardMedia
   className={classes.media}
-  image="e-commercemarketplace.png"
+  image={eCommerce}
   title="E-Commerce Marketplace"
 />
 <CardContent>

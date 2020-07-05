@@ -117,9 +117,9 @@ export default function HomePage() {
 
         </Grid>
 
-    <Grid container spacing={0} direction="column" alignItems="center" justify="center">
+    <Grid container spacing={0} >
 
-        <Grid>
+        <Grid item xs={4} align="center">
 
         <Card className={classes.root}>
       <CardActionArea>
@@ -153,13 +153,13 @@ export default function HomePage() {
       </CardActions>
     </Card>
         </Grid>
-    </Grid>
+
 
     <div className="whitespace"></div>
 
-    <Grid container spacing={0} direction="column" alignItems="center" justify="center">
 
-<Grid>
+
+<Grid item xs={4} align="center">
 
 <Card className={classes.root}>
 <CardActionArea>
@@ -193,13 +193,13 @@ export default function HomePage() {
 </CardActions>
 </Card>
 </Grid>
-</Grid>
+
 
 <div className="whitespace"></div>
 
-<Grid container spacing={0} direction="column" alignItems="center" justify="center">
 
-<Grid>
+
+<Grid item xs={4} align="center">
 
 <Card className={classes.root}>
 <CardActionArea>

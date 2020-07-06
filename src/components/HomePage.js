@@ -52,18 +52,14 @@ export default function HomePage() {
     const classes = useStyles();
   
     return (
-<div>
+<div className="body">
     
-    
-    <div className="body">
-    
+
         <div class="bgEffect"></div>
         <div class="bgEffect overlay1"></div>
         <div class="bgEffect overlay2"></div>
-        
-    
 
- 
+
         <Grid container  id="home">
             <Grid item xs ={2}></Grid>
             <Grid item xs ={9}>
@@ -179,7 +175,7 @@ export default function HomePage() {
             </Grid>
         </Grid>
 
-    </div>
+    
 
     <div className="whitespace"></div>
 
@@ -390,7 +386,6 @@ export default function HomePage() {
       </Grid>
       </Grid>
     
-
 </div>
     )
   }

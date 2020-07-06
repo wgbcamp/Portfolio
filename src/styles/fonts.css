@@ -1,4 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700;900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700;900&display=swap'); */
+
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@800&display=swap');
+
+* {
+  box-sizing: border-box;  
+}
 
 .body{
     text-align: left;
@@ -8,7 +14,16 @@
 .title{
     text-align: left;
     font-size:50px;
+    color: white;
 }
+
+.whiteText{
+    color: white;
+}
+
 .whitespace{
     height: 10vh;
 }
+
+
+

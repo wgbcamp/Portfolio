@@ -1,0 +1,51 @@
+.ourPhoto{
+    /* transform: scale(1.5);
+    transition: all .5s; */
+    animation: fadeIn ease 2s;
+    animation-fill-mode: forwards;
+    transform: scale(1);
+    transition: all .3s ease-in-out;
+}
+
+.ourPhoto:hover{
+    transform: scale(1.1);
+    transition: all .3s ease-in-out;
+}
+
+.bgEffect{
+    animation:slide 5s ease-in-out infinite alternate;
+    background-image: linear-gradient(-60deg, #f2791d 50%, #ff2b2b 50%);
+    left:-50%;
+    opacity:.5;
+    position: absolute;
+    right:-50%;
+    z-index:-1;
+    height: 900px;
+}
+
+.overlay1{
+    animation-direction:alternate-reverse;
+    animation-duration:6s;
+}
+
+.overlay2{
+    animation-duration:7s;
+}
+
+@keyframes slide {
+    0% {
+      transform:translateX(-25%);
+    }
+    100% {
+      transform:translateX(25%);
+    }
+  }
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

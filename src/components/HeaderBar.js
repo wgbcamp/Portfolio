@@ -19,15 +19,16 @@ const useStyles = makeStyles((theme) => ({
   },
   title: {
     flexGrow: 1,
-    fontFamily: 'Raleway',
+    fontFamily: 'Darker Grotesque',
     fontSize: 30,
     fontWeight: 700
   },
   textLink: {
     color: 'inherit',
     textDecoration: 'inherit',
+    fontSize: 25,
     margin: 20,
-    fontFamily: 'Raleway',
+    fontFamily: 'Darker Grotesque',
     fontWeight: 900
 },
 })); 

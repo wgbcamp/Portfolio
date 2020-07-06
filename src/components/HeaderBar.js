@@ -9,6 +9,7 @@ import MenuItem from '@material-ui/core/MenuItem';
 import Menu from '@material-ui/core/Menu';
 import { HashLink as Link } from 'react-router-hash-link';
 import '../styles/fonts.css';
+import '../styles/animations.css';
 
 
 
@@ -58,9 +59,11 @@ export default function MenuAppBar() {
 
       <AppBar >
         <Toolbar>
+        <div id="burgerMenu">
           <IconButton edge="start" className={classes.menuButton} onClick={handleMenu} color="inherit" aria-label="menu">
             <MenuIcon />
           </IconButton>
+          </div>
           <Typography variant="h6" className={classes.title}>
             Warren Brown
           </Typography>
@@ -69,7 +72,7 @@ export default function MenuAppBar() {
 
             <div>
 
-<div>
+<div id="headerBarLinks">
 <Link to="#home" variant="h6" className={classes.textLink}>
 Home
 </Link>
@@ -84,6 +87,7 @@ Contact
 </Link>
 </div>
 
+            
               <Menu 
                 id="menu-appbar"
                 anchorEl={anchorEl}
@@ -104,6 +108,7 @@ Contact
                 <MenuItem onClick={handleClose}><Link to="#portfolio" variant="h6" className={classes.textLink}>Portfolio</Link></MenuItem>
                 <MenuItem onClick={handleClose}><Link to="#contact" variant="h6" className={classes.textLink}>Contact</Link></MenuItem>
               </Menu>
+              
             </div>
           )}
         </Toolbar>

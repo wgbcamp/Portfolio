@@ -41,7 +41,7 @@ const useStyles = makeStyles({
     },
     technologyBG: {
       color: 'white',
-      background: 'linear-gradient(-90deg, #f25d52, #5284de)',
+      background: 'linear-gradient(-90deg, #f2791d, #ff4040)',
       borderRadius: '20px',
       paddingTop: '10px',
       boxShadow: '0 4px 9px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.5);'
@@ -62,14 +62,15 @@ export default function HomePage() {
 
         <Grid container  id="home">
             <Grid item xs ={2}></Grid>
-            <Grid item xs ={9}>
+            <Grid item xs ={8}>
             <div className="title">
               <br></br>
                 <h1>Warren Brown</h1>
             </div>
             </Grid>
             <Grid item xs ={2}></Grid>
-            <Grid item xs ={9}>
+            <Grid item xs ={2}></Grid>
+            <Grid item xs ={8}>
         A full-stack web developer based in Bowie, Maryland. 
             </Grid>
         </Grid>
@@ -77,14 +78,14 @@ export default function HomePage() {
         <div className="whitespace"></div>
         <Grid container>
             <Grid item xs ={8}></Grid>
-        <Grid item xs ={4}>
+        <Grid item xs ={12} md={4} align="center">
 
 
           <div class="ourPhoto">
         <img src={ourphoto} style={{width: 300, height: 300, borderRadius: 150}}/>
           </div>
 
-        <div style={{fontSize: 30, textAlign:"center"}}><a style={{ textDecoration: 'none'}} href="https://docs.google.com/document/d/18cafRckwsBvu507Sv8Ge1CHlm5eAjGLMuCJb7teNZVM/edit?usp=sharing">Download resume</a></div>
+        <div style={{fontSize: 35, textAlign:"center"}}><a style={{ textDecoration: 'none'}} href="https://docs.google.com/document/d/18cafRckwsBvu507Sv8Ge1CHlm5eAjGLMuCJb7teNZVM/edit?usp=sharing">Download resume</a></div>
         </Grid>
         </Grid> 
 
@@ -93,44 +94,44 @@ export default function HomePage() {
 
         <div className="whitespace"></div>
         <Grid container spacing={0} direction="column" alignItems="center" justify="center" id="skills">
-          <Grid>
+          <Grid item xs={10} align="center">
         <div class="whiteText">
-        Skilled in front-end and back-end technologies:
+        <h3>Skilled in front-end and back-end technologies:</h3>
         </div>
         </Grid>
             <Grid>
             <div className="title">
-                <h6>Front End</h6>
+                <h6>Front-end</h6>
             </div>
             </Grid>
               <Grid container>
                 <Grid item xs={1}></Grid>
                 <Grid item xs={10}>
             <Grid container spacing ={0} alignItems="center" justify="center" className={classes.technologyBG}>
-            <Grid item xs={6} sm={4} md={2} align="center">
+            <Grid item xs={6} sm={4} md={2} align="center" id="responsive">
                 <img src={js} style={{width: 140, height: 150, marginRight: 10, marginLeft: 10, borderRadius: 10}}/>
                 <br></br>
-                JavaScript
+                <div style={{paddingBottom: 20}}>JavaScript</div>
                 </Grid>
-            <Grid item xs={6} sm={4} md={2} align="center">
+            <Grid item xs={6} sm={4} md={2} align="center" id="responsive">
                 <img src={react} style={{width: 140, height: 150, marginRight: 10, marginLeft: 10}}/>
                 <br></br>
-                React.js
+                <div style={{paddingBottom: 20}}>React.js</div>
                 </Grid>             
-            <Grid item xs={6} sm={4} md={2} align="center">
+            <Grid item xs={6} sm={4} md={2} align="center" id="responsive">
                 <img src={jquery} style={{width: 150, marginRight: 10, marginLeft: 10}}/>
                 <br></br>
-                jQuery
+                <div style={{paddingBottom: 20}}>jQuery</div>
                 </Grid>
-            <Grid item xs={6} sm={4} md={2} align="center">
+            <Grid item xs={6} sm={4} md={2} align="center" id="responsive">
                 <img src={html5} style={{width: 150, marginRight: 10, marginLeft: 10}}/>
                 <br></br>
-                HTML
+                <div style={{paddingBottom: 20}}>HTML</div>
                 </Grid>
-            <Grid item xs={6} sm={4} md={2} align="center">
+            <Grid item xs={6} sm={4} md={2} align="center" id="responsive">
                 <img src={css3} style={{width: 110, height: 150, marginRight: 10, marginLeft: 10}}/>
                 <br></br>
-                CSS
+                <div style={{paddingBottom: 20}}>CSS</div>
                 </Grid>
 
                 </Grid>
@@ -143,32 +144,32 @@ export default function HomePage() {
         <Grid container spacing={0} direction="column" alignItems="center" justify="center">
             <Grid>
             <div className="title">
-                <h6>Back End</h6>
+                <h6>Back-end</h6>
             </div>
             </Grid>
             <Grid container>
             <Grid item xs={1}></Grid>
             <Grid item xs={10}>
             <Grid container spacing ={0} alignItems="center" justify="center" className={classes.technologyBG}>
-            <Grid item xs={6} sm={4} md={2} align="center">
+            <Grid item xs={6} sm={4} md={2} align="center" id="responsive">
                 <img src={node} style={{width: 150, marginRight: 10, marginLeft: 10}}/>
                 <br></br>
-                Node.js
+                <div style={{paddingBottom: 20}}>Node.js</div>
               </Grid>
-              <Grid item xs={6} sm={4} md={2} align="center">
+              <Grid item xs={6} sm={4} md={2} align="center" id="responsive">
                 <img src={express} style={{width: 150, height: 100, marginRight: 10, marginLeft: 10}}/>
                 <br></br>
-                Express.js
+                <div style={{paddingBottom: 20}}>Express.js</div>
                 </Grid>
-              <Grid item xs={6} sm={4} md={2} align="center">
+              <Grid item xs={6} sm={4} md={2} align="center" id="responsive">
                 <img src={mysql} style={{width: 150, height: 100, marginRight: 10, marginLeft: 10, borderRadius: 10}}/>
                 <br></br>
-                SQL
+                <div style={{paddingBottom: 20}}>SQL</div>
                 </Grid>
-                <Grid item xs={6} sm={4} md={2} align="center">
-                <img src={mongodb} style={{width: 200, height: 100, marginRight: 10, marginLeft: 10}}/>
+                <Grid item xs={6} sm={4} md={2} align="center" id="responsive">
+                <img src={mongodb} style={{width: 250, height: 100, marginRight: 10, marginLeft: 10}}/>
                 <br></br>
-                MongoDB
+                <div style={{paddingBottom: 20}}>MongoDB</div>
                 </Grid>
             </Grid>
           </Grid>
@@ -180,13 +181,13 @@ export default function HomePage() {
     <div className="whitespace"></div>
 
     <Grid container id="portfolio">
-            <Grid item xs ={4}></Grid>
-            <Grid item xs ={4}>
+            
+            <Grid item xs ={12} align='center'>
             <div className="title" style={{textAlign: 'center'}}>
                 <h3>Portfolio</h3>
             </div>
             </Grid>
-            <Grid item xs ={4}></Grid>
+            
 
         </Grid>
 
@@ -358,32 +359,52 @@ export default function HomePage() {
                 <h3>Contact</h3>
             </div>   
 
-    <Grid container spacing={2} direction="column" alignItems="center" justify="center">
-      <Grid>
-      <div class="whiteText">
-      <h3>Email address: warrengbrn@gmail.com</h3>
+    <Grid container spacing={2}>
+    <Grid item xs={0} sm={1}></Grid>
+      <Grid item xs={12} sm={5} align="center">
+      <div class="whiteText" style={{wordWrap: "break-word", fontSize: 30}}>
+      Email address:
+      <br></br>
+      warrengbrn@gmail.com
+      <br></br>
+      <br></br>
       </div>
       </Grid>
-      <Grid>
-      <div class="whiteText">
-      <h3>Phone number: 301-830-1095</h3>
+      <Grid item xs={12} sm={5} align="center">
+      <div class="whiteText" style={{wordWrap: "break-word", fontSize: 30}}>
+      
+      Phone number:
+      <br></br>
+      301-830-1095
       </div>
       </Grid>
+      <Grid item xs={0} sm={1}></Grid>
       </Grid>  
 
-      <Grid container spacing={2} direction="column" alignItems="center" justify="center">
-      <Grid item xs ={2}>
-      <h3><a href="https://github.com/wgbcamp">
+      <Grid container spacing={2}>
+      <Grid item xs={0} sm={3}></Grid>
+      <Grid item xs={12} sm={3} align="center">
+      
+      <div class="whiteText" style={{wordWrap: "break-word", fontSize: 30}}>
+      <br></br>
+      Github:
+      </div>
+      <a href="https://github.com/wgbcamp">
       <FontAwesomeIcon icon={faGithub} size='2x' />
       </a>
-      </h3>
+      
       </Grid>
-      <Grid item xs ={2}>
-      <h3><a href="https://www.linkedin.com/in/warren-brown-4808b9132/">
+      
+      <Grid item xs={12} sm={3} align="center">
+      <div class="whiteText" style={{wordWrap: "break-word", fontSize: 30}}>
+      <br></br>
+      LinkedIn:
+      </div>
+      <a href="https://www.linkedin.com/in/warren-brown-4808b9132/">
       <FontAwesomeIcon icon={faLinkedin} size='2x' />
       </a>
-      </h3>
       </Grid>
+      <Grid item xs={0} sm={3}></Grid>
       </Grid>
     
 </div>

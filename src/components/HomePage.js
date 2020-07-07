@@ -80,7 +80,7 @@ export default function HomePage() {
             <Grid item xs ={10} sm={8}>
             <div className="title">
               <br></br>
-                <h1>Warren Brown</h1>
+                <div className="titleMyName">Warren Brown</div>
             </div>
             </Grid>
             <Grid item xs ={1} sm={2}></Grid>

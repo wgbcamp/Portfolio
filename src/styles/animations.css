@@ -88,7 +88,7 @@
 
 @media only screen and (max-width: 700px){
     #home{
-        font-size:7vw
+        font-size:7vw;
     }
 }
 
@@ -97,3 +97,16 @@
         text-align: center
     }
 }
+
+@media only screen and (max-width: 600px){
+    .title, .titleMyName{
+        text-align: center
+    }
+}
+
+@media only screen and (max-height: 500px){
+    .titleMyName{
+        font-size:15vh;
+    }
+}
+

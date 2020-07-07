@@ -15,6 +15,12 @@ import '../styles/animations.css';
 
 const useStyles = makeStyles((theme) => ({
 
+  menu:{
+    " & .MuiPaper-root": {
+      backgroundColor: "#2c2540",
+      color: "white"
+    }
+  },
   menuButton: {
     marginRight: theme.spacing(2),
   },
@@ -88,7 +94,7 @@ Contact
 </div>
 
             
-              <Menu 
+              <Menu transitionDuration={600}
                 id="menu-appbar"
                 anchorEl={anchorEl}
                 anchorOrigin={{
@@ -100,6 +106,7 @@ Contact
                   vertical: 'top',
                   horizontal: 'right',
                 }}
+                className={classes.menu}
                 open={open}
                 onClose={handleClose}
               >

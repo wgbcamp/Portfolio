@@ -85,7 +85,7 @@ export default function HomePage() {
         <img src={ourphoto} style={{width: 300, height: 300, borderRadius: 150}}/>
           </div>
 
-        <div style={{fontSize: 35, textAlign:"center"}}><a style={{ textDecoration: 'none'}} href="https://docs.google.com/document/d/18cafRckwsBvu507Sv8Ge1CHlm5eAjGLMuCJb7teNZVM/edit?usp=sharing">Download resume</a></div>
+        <div style={{fontSize: 35, textAlign:"center"}}><a style={{ textDecoration: 'none', color: '#551A8B'}} href="https://docs.google.com/document/d/18cafRckwsBvu507Sv8Ge1CHlm5eAjGLMuCJb7teNZVM/edit?usp=sharing">Download resume</a></div>
         </Grid>
         </Grid> 
 
@@ -382,31 +382,32 @@ export default function HomePage() {
       </Grid>  
 
       <Grid container spacing={2}>
-      <Grid item xs={0} sm={3}></Grid>
-      <Grid item xs={12} sm={3} align="center">
+      <Grid item xs={0} sm={1}></Grid>
+      <Grid item xs={12} sm={5} align="center">
       
       <div class="whiteText" style={{wordWrap: "break-word", fontSize: 30}}>
       <br></br>
       Github:
       </div>
-      <a href="https://github.com/wgbcamp">
+      <a href="https://github.com/wgbcamp" style={{color: '#551A8B'}}>
       <FontAwesomeIcon icon={faGithub} size='2x' />
       </a>
       
       </Grid>
       
-      <Grid item xs={12} sm={3} align="center">
+      <Grid item xs={12} sm={5} align="center">
       <div class="whiteText" style={{wordWrap: "break-word", fontSize: 30}}>
       <br></br>
       LinkedIn:
       </div>
-      <a href="https://www.linkedin.com/in/warren-brown-4808b9132/">
+      <a href="https://www.linkedin.com/in/warren-brown-4808b9132/" style={{color: '#551A8B'}}>
       <FontAwesomeIcon icon={faLinkedin} size='2x' />
       </a>
       </Grid>
-      <Grid item xs={0} sm={3}></Grid>
+      <Grid item xs={0} sm={1}></Grid>
       </Grid>
     
+      <div className="whitespace"></div>
 </div>
     )
   }

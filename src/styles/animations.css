@@ -20,7 +20,7 @@
     position: absolute;
     right:-50%;
     z-index:-1;
-    height: 900px;
+    height: 75vh;
 }
 
 .overlay1{
@@ -35,14 +35,6 @@
 #responsive{
     max-width: 100%;
     height: auto;
-}
-
-#hoverDetails{
-    background-color:#00F;
-
-    /* filter: blur(0.15rem); */
-    /* background: rgba(242, 121, 29,0.85); */
-
 }
 
 @keyframes slide {
@@ -69,9 +61,39 @@
     }
 }
 
+@media only screen and (max-width: 960px){
+    #aboutMe{
+        text-align: center;
+    }
+}
+
 @media only screen and (max-width: 800px){
     #headerBarLinks{
         visibility: hidden;
 
+    }
+}
+
+@media only screen and (max-width: 1280px){
+    .bgEffect{
+        height: 80vh
+    }
+}
+
+@media only screen and (max-width: 868px){
+    .bgEffect{
+        height: 95vh
+    }
+}
+
+@media only screen and (max-width: 700px){
+    #home{
+        font-size:7vw
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .title{
+        text-align: center
     }
 }

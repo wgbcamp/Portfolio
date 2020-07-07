@@ -35,8 +35,7 @@ const useStyles = makeStyles({
       boxShadow: '0 4px 9px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.5);',
       marginBottom: 100,
       backgroundColor: "#2c2540",
-      color: 'white',
-      
+      color: 'white'     
     },
     media: {
       height: 600,
@@ -51,6 +50,16 @@ const useStyles = makeStyles({
       borderRadius: '20px',
       paddingTop: '10px',
       boxShadow: '0 4px 9px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.5);'
+    },
+    aboutMe: {
+      color: 'white',
+      backgroundColor: "#2c2540",
+      borderRadius: '20px',
+      paddingLeft: '25px',
+      paddingBottom: '25px',
+      paddingRight: '25px',
+      boxShadow: '0 4px 9px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.5);',
+      fontSize: 30
     }
   });
 
@@ -76,7 +85,7 @@ export default function HomePage() {
             </Grid>
             <Grid item xs ={1} sm={2}></Grid>
             <Grid item xs ={2}></Grid>
-            <Grid item xs ={8}>
+            <Grid item xs ={9}>
         A full-stack web developer based in Bowie, Maryland. 
             </Grid>
         </Grid>
@@ -94,6 +103,16 @@ export default function HomePage() {
         <div style={{fontSize: 35, textAlign:"center"}}><a style={{ textDecoration: 'none', color: '#551A8B'}} href="https://docs.google.com/document/d/18cafRckwsBvu507Sv8Ge1CHlm5eAjGLMuCJb7teNZVM/edit?usp=sharing">Download resume</a></div>
         </Grid>
         </Grid> 
+
+        <Grid container spacing={0}>
+          <Grid item xs={1}></Grid>
+          <Grid item xs={10} className={classes.aboutMe}>
+            <div id="aboutMe" style={{fontSize:70}}>About me</div>
+            <br></br>
+            Hello, I'm Warren Brown, a full-stack web developer in Bowie, Maryland. I enjoy taking on complex assignments and turning challenges into products that are functional, intuitive, and accessible for everyone. I took an interest in software development after graduating from Rutgers University and studied at George Washington University to jump into the world of programming. As a web developer, I'm always searching for new projects that allow me to combine my knowledge and creativity with web technologies to satisfy clients and enhance my skill set.
+          </Grid>
+          <Grid item xs={1}></Grid>
+        </Grid>
 
         
 
@@ -199,13 +218,12 @@ export default function HomePage() {
 
     <Grid container spacing={0}>
 
-        <Grid item sm={1} ></Grid>
+        <Grid item xs={1} ></Grid>
 
-        <Grid item sm={10} md={4} lg={4} xl={2}  align="center">
+        <Grid item xs={10} md={4} lg={4} xl={2}  align="center">
 
         <div id="hoverDetails">
         <Card className={classes.projectCard}>
-      <CardActionArea>
         <CardMedia
           className={classes.media}
           image={fyw}
@@ -234,15 +252,14 @@ export default function HomePage() {
 
           </Typography>
         </CardContent>
-      </CardActionArea>
       <CardActions>
-        <a href="https://github.com/wgbcamp/Project1/tree/Warren">
+        <a href="https://github.com/wgbcamp/Project1/tree/Warren" style={{textDecoration: "none"}}>
         <Button size="small" color="primary" style={{color: 'white'}}>
         <FontAwesomeIcon icon={faGithub} size='2x' />
           Find on Github
         </Button>
         </a>
-        <a href="https://new-hill.herokuapp.com/"> 
+        <a href="https://new-hill.herokuapp.com/" style={{textDecoration: "none"}}> 
         <Button size="small" color="primary" style={{color: 'white'}}>
             <FontAwesomeIcon icon={faExternalLinkAlt} size='2x' />
           Check it out
@@ -253,15 +270,14 @@ export default function HomePage() {
     </div>
         </Grid>
 
-        <Grid item sm={1}  ></Grid>
+        <Grid item xs={1}  ></Grid>
 
     
-        <Grid item sm={1}  ></Grid>
+        <Grid item xs={1}  ></Grid>
 
-        <Grid item sm={10} md={4} lg={4} xl={2} align="center">
+        <Grid item xs={10} md={4} lg={4} xl={2} align="center">
 
 <Card className={classes.projectCard}>
-<CardActionArea>
 <CardMedia
   className={classes.media}
   image={captionclown}
@@ -290,15 +306,14 @@ export default function HomePage() {
 </div>
   </Typography>
 </CardContent>
-</CardActionArea>
 <CardActions>
-  <a href="https://github.com/wgbcamp/Project2">
+  <a href="https://github.com/wgbcamp/Project2" style={{textDecoration: "none"}}>
 <Button size="small" color="primary" style={{color: 'white'}}>
 <FontAwesomeIcon icon={faGithub} size='2x' />
   Find on Github
 </Button>
 </a>
-  <a href="https://polar-harbor-60783.herokuapp.com/">
+  <a href="https://polar-harbor-60783.herokuapp.com/" style={{textDecoration: "none"}}>
 <Button size="small" color="primary" style={{color: 'white'}}>
     <FontAwesomeIcon icon={faExternalLinkAlt} size='2x' />
   Check it out
@@ -308,15 +323,14 @@ export default function HomePage() {
 </Card>
 </Grid>
 
-        <Grid item sm={1}></Grid>
+        <Grid item xs={1}></Grid>
 
 
-        <Grid item sm={1}></Grid>
+        <Grid item xs={1}></Grid>
 
-        <Grid item sm={10} md={4} lg={4} xl={2} align="center">
+        <Grid item xs={10} md={4} lg={4} xl={2} align="center">
 
 <Card className={classes.projectCard}>
-<CardActionArea>
 <CardMedia
   className={classes.media}
   image={eCommerce}
@@ -343,15 +357,14 @@ export default function HomePage() {
 </div>
   </Typography>
 </CardContent>
-</CardActionArea>
 <CardActions>
-<a href="https://github.com/wgbcamp/Project3">
+<a href="https://github.com/wgbcamp/Project3" style={{textDecoration: "none"}}>
 <Button size="small" color="primary" style={{color: 'white'}}>
 <FontAwesomeIcon icon={faGithub} size='2x' />
   Find on Github
 </Button>
 </a>
-<a href="https://powerful-fortress-23349.herokuapp.com/">
+<a href="https://powerful-fortress-23349.herokuapp.com/" style={{textDecoration: "none"}}>
 <Button size="small" color="primary" style={{color: 'white'}}>
     <FontAwesomeIcon icon={faExternalLinkAlt} size='2x' />
   Check it out
@@ -362,7 +375,7 @@ export default function HomePage() {
 </Grid>
     </Grid>
 
-<Grid item sm={1}></Grid>
+<Grid item xs={1}></Grid>
 
 
 
@@ -400,7 +413,7 @@ export default function HomePage() {
       
       <div class="whiteText" style={{wordWrap: "break-word", fontSize: 30}}>
       <br></br>
-      Github:
+      Github
       </div>
       <a href="https://github.com/wgbcamp" style={{color: '#551A8B'}}>
       <FontAwesomeIcon icon={faGithub} size='2x' />
@@ -411,7 +424,7 @@ export default function HomePage() {
       <Grid item xs={12} sm={5} align="center">
       <div class="whiteText" style={{wordWrap: "break-word", fontSize: 30}}>
       <br></br>
-      LinkedIn:
+      LinkedIn
       </div>
       <a href="https://www.linkedin.com/in/warren-brown-4808b9132/" style={{color: '#551A8B'}}>
       <FontAwesomeIcon icon={faLinkedin} size='2x' />

@@ -21,7 +21,8 @@
     text-align: left;
     font-size:100px;
     color: white;
-    padding: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .whiteText{

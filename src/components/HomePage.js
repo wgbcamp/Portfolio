@@ -109,7 +109,7 @@ export default function HomePage() {
           <Grid item xs={10} className={classes.aboutMe}>
             <div id="aboutMe" style={{fontSize:70}}>About me</div>
             <br></br>
-            Hello, I'm Warren Brown, a full-stack web developer in Bowie, Maryland. I enjoy taking on complex assignments and turning challenges into products that are functional, intuitive, and accessible for everyone. I took an interest in software development after graduating from Rutgers University and studied at George Washington University to jump into the world of programming. As a web developer, I'm always searching for new projects that allow me to combine my knowledge and creativity with web technologies to satisfy clients and enhance my skill set.
+            Hello, I'm Warren Brown, a full-stack web developer in Bowie, Maryland. I enjoy taking on complex and challenging assignments and developing solutions that are functional, intuitive, and accessible for everyone. I took an interest in software development after graduating from Rutgers University and studied at George Washington University to jump into the world of programming. As a web developer, I'm always searching for new projects that allow me to combine my knowledge and creativity with web technologies in order to satisfy clients and enhance my skill set.
           </Grid>
           <Grid item xs={1}></Grid>
         </Grid>

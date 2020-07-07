@@ -61,14 +61,14 @@ export default function HomePage() {
 
 
         <Grid container  id="home">
-            <Grid item xs ={2}></Grid>
-            <Grid item xs ={8}>
+            <Grid item xs ={1} sm={2}></Grid>
+            <Grid item xs ={10} sm={8}>
             <div className="title">
               <br></br>
                 <h1>Warren Brown</h1>
             </div>
             </Grid>
-            <Grid item xs ={2}></Grid>
+            <Grid item xs ={1} sm={2}></Grid>
             <Grid item xs ={2}></Grid>
             <Grid item xs ={8}>
         A full-stack web developer based in Bowie, Maryland. 

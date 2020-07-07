@@ -33,13 +33,17 @@ const useStyles = makeStyles({
     projectCard: {
       width: '100%',
       boxShadow: '0 4px 9px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.5);',
-      marginBottom: 100
+      marginBottom: 100,
+      backgroundColor: "#2c2540",
+      color: 'white',
+      
     },
     media: {
       height: 600,
     },
     bulletedList:{
-      textAlign: "left"
+      textAlign: "left",
+      color: 'white'
     },
     technologyBG: {
       color: 'white',
@@ -193,7 +197,7 @@ export default function HomePage() {
 
         </Grid>
 
-    <Grid container spacing={0} >
+    <Grid container spacing={0}>
 
         <Grid item sm={1} ></Grid>
 
@@ -211,7 +215,7 @@ export default function HomePage() {
           <Typography gutterBottom variant="h5" component="h2">
             Find Your Way!
           </Typography>
-          <Typography variant="body1" color="textPrimary" component="p">
+          <Typography variant="body1" color="textPrimary" component="p" style={{color: 'white'}}>
           A location finder application that displays the current weather and allows users search for locations, landmarks, businesses, etc., and see nearby geography and points of interest.
 
           <br></br>
@@ -233,13 +237,13 @@ export default function HomePage() {
       </CardActionArea>
       <CardActions>
         <a href="https://github.com/wgbcamp/Project1/tree/Warren">
-        <Button size="small" color="primary">
+        <Button size="small" color="primary" style={{color: 'white'}}>
         <FontAwesomeIcon icon={faGithub} size='2x' />
           Find on Github
         </Button>
         </a>
         <a href="https://new-hill.herokuapp.com/"> 
-        <Button size="small" color="primary">
+        <Button size="small" color="primary" style={{color: 'white'}}>
             <FontAwesomeIcon icon={faExternalLinkAlt} size='2x' />
           Check it out
         </Button>
@@ -267,7 +271,7 @@ export default function HomePage() {
   <Typography gutterBottom variant="h5" component="h2">
     Caption Clown
   </Typography>
-  <Typography variant="body1" color="textPrimary" component="p">
+  <Typography variant="body1" color="textPrimary" component="p" style={{color: 'white'}}>
   Share photos with your friends and try to make the best caption. Users can create accounts and post and delete images and captions.
 
   <br></br>
@@ -289,13 +293,13 @@ export default function HomePage() {
 </CardActionArea>
 <CardActions>
   <a href="https://github.com/wgbcamp/Project2">
-<Button size="small" color="primary">
+<Button size="small" color="primary" style={{color: 'white'}}>
 <FontAwesomeIcon icon={faGithub} size='2x' />
   Find on Github
 </Button>
 </a>
   <a href="https://polar-harbor-60783.herokuapp.com/">
-<Button size="small" color="primary">
+<Button size="small" color="primary" style={{color: 'white'}}>
     <FontAwesomeIcon icon={faExternalLinkAlt} size='2x' />
   Check it out
 </Button>
@@ -322,7 +326,7 @@ export default function HomePage() {
   <Typography gutterBottom variant="h5" component="h2">
     E-Commerce Marketplace
   </Typography>
-  <Typography variant="body1" color="textPrimary" component="p">
+  <Typography variant="body1" color="textPrimary" component="p" style={{color: 'white'}}>
   MERN application that empowers users to act as both sellers who sell and auction off products and buyers who bid on and buy items.
 <br></br>
 <br></br>
@@ -342,13 +346,13 @@ export default function HomePage() {
 </CardActionArea>
 <CardActions>
 <a href="https://github.com/wgbcamp/Project3">
-<Button size="small" color="primary">
+<Button size="small" color="primary" style={{color: 'white'}}>
 <FontAwesomeIcon icon={faGithub} size='2x' />
   Find on Github
 </Button>
 </a>
 <a href="https://powerful-fortress-23349.herokuapp.com/">
-<Button size="small" color="primary">
+<Button size="small" color="primary" style={{color: 'white'}}>
     <FontAwesomeIcon icon={faExternalLinkAlt} size='2x' />
   Check it out
 </Button>

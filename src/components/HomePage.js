@@ -30,8 +30,10 @@ import react from '../images/react1.png';
 
 
 const useStyles = makeStyles({
-    root: {
-      maxWidth: 500,
+    projectCard: {
+      width: '100%',
+      boxShadow: '0 4px 9px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.5);',
+      marginBottom: 100
     },
     media: {
       height: 600,
@@ -193,9 +195,12 @@ export default function HomePage() {
 
     <Grid container spacing={0} >
 
-        <Grid item sm={12} md={6} xl={4} align="center">
+        <Grid item sm={1} ></Grid>
 
-        <Card className={classes.root}>
+        <Grid item sm={10} md={4} lg={4} xl={2}  align="center">
+
+        <div id="hoverDetails">
+        <Card className={classes.projectCard}>
       <CardActionArea>
         <CardMedia
           className={classes.media}
@@ -241,16 +246,17 @@ export default function HomePage() {
         </a>
       </CardActions>
     </Card>
+    </div>
         </Grid>
 
+        <Grid item sm={1}  ></Grid>
 
-    <div className="whitespace"></div>
+    
+        <Grid item sm={1}  ></Grid>
 
+        <Grid item sm={10} md={4} lg={4} xl={2} align="center">
 
-
-<Grid item sm={12} md={6} xl={4} align="center">
-
-<Card className={classes.root}>
+<Card className={classes.projectCard}>
 <CardActionArea>
 <CardMedia
   className={classes.media}
@@ -298,14 +304,14 @@ export default function HomePage() {
 </Card>
 </Grid>
 
-
-<div className="whitespace"></div>
-
+        <Grid item sm={1}></Grid>
 
 
-<Grid item sm={12} md={6} xl={4} align="center">
+        <Grid item sm={1}></Grid>
 
-<Card className={classes.root}>
+        <Grid item sm={10} md={4} lg={4} xl={2} align="center">
+
+<Card className={classes.projectCard}>
 <CardActionArea>
 <CardMedia
   className={classes.media}
@@ -350,9 +356,12 @@ export default function HomePage() {
 </CardActions>
 </Card>
 </Grid>
-</Grid>
+    </Grid>
 
-<div className="whitespace"></div>
+<Grid item sm={1}></Grid>
+
+
+
 
         
 <div className="title" id="contact" style={{textAlign: 'center'}}>

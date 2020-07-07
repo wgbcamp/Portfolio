@@ -37,6 +37,14 @@
     height: auto;
 }
 
+#hoverDetails{
+    background-color:#00F;
+
+    /* filter: blur(0.15rem); */
+    /* background: rgba(242, 121, 29,0.85); */
+
+}
+
 @keyframes slide {
     0% {
       transform:translateX(-25%);

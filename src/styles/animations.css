@@ -62,8 +62,8 @@
 }
 
 @media only screen and (max-width: 960px){
-    #aboutMe{
-        text-align: center;
+    #aboutMe, #resume{
+        text-align: center !important;
     }
 }
 

@@ -25,6 +25,10 @@
     padding-bottom: 10px;
 }
 
+#resume{
+    transform: translateY(70%);
+}
+
 .whiteText{
     color: white;
 }

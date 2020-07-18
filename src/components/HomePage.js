@@ -27,6 +27,7 @@ import mysql from '../images/mysql.png';
 import node from '../images/node.svg';
 import ourphoto from '../images/ourphoto.jpg';
 import react from '../images/react1.png';
+import chatapp from '../images/chatapppicture.png';
 
 
 const useStyles = makeStyles({
@@ -100,14 +101,18 @@ export default function HomePage() {
         <img src={ourphoto} style={{width: 300, height: 300, borderRadius: 150}}/>
           </div>
 
-        <div style={{fontSize: 35, textAlign:"center"}}><a style={{ textDecoration: 'none', color: '#551A8B'}} href="https://docs.google.com/document/d/18cafRckwsBvu507Sv8Ge1CHlm5eAjGLMuCJb7teNZVM/edit?usp=sharing">Download resume</a></div>
+        
         </Grid>
         </Grid> 
 
         <Grid container spacing={0}>
           <Grid item xs={1}></Grid>
           <Grid item xs={10} className={classes.aboutMe}>
-            <div id="aboutMe" style={{fontSize:70}}>About me</div>
+            <Grid container spacing={0}>
+              <Grid item xs={12} md={6}><div id="aboutMe" style={{fontSize:70}}>About me</div></Grid>
+              <Grid item xs={12} md={6}><div id="resume" style={{fontSize: 35, textAlign:"right"}}><a style={{ textDecoration: 'none', color: '#551A8B'}} href="https://docs.google.com/document/d/18cafRckwsBvu507Sv8Ge1CHlm5eAjGLMuCJb7teNZVM/edit?usp=sharing">Download resume</a></div></Grid>
+            </Grid>
+            
             <br></br>
             Hello, I'm Warren Brown, a full-stack web developer in Bowie, Maryland. I enjoy taking on complex and challenging assignments and developing solutions that are functional, intuitive, and accessible for everyone. I took an interest in software development after graduating from Rutgers University and studied at George Washington University to jump into the world of programming. As a web developer, I'm always searching for new projects that allow me to combine my knowledge and creativity with web technologies in order to satisfy clients and enhance my skill set.
           </Grid>
@@ -218,6 +223,62 @@ export default function HomePage() {
 
     <Grid container spacing={0}>
 
+    <Grid item xs={1} ></Grid>
+
+<Grid item xs={10} md={4} lg={4} xl={2}  align="center">
+
+<div id="hoverDetails">
+<Card className={classes.projectCard}>
+<CardMedia
+  className={classes.media}
+  image={chatapp}
+  title="Find Your Way"
+/>
+<CardContent>
+  <Typography gutterBottom variant="h5" component="h2">
+    Chat Client
+  </Typography>
+  <Typography variant="body1" color="textPrimary" component="p" style={{color: 'white'}}>
+  Chat client featuring multiple simultaneous connections through web sockets. Allows users to create nicknames and post messages to each other and displays how many users are present in a current session.
+
+  <br></br>
+<br></br>
+<div className={classes.bulletedList}>
+<u>Created with:</u>
+<ul>
+<li>Javascript, CSS, HTML</li>
+<li>Bootstrap</li>
+<li>Socket.IO</li>
+<li>jQuery</li>
+<li>Express.js</li>
+<li>Node.js</li>
+<li>NPM</li>
+<li>SQL</li>
+</ul>
+</div>
+
+  </Typography>
+</CardContent>
+<CardActions>
+<a href="https://github.com/wgbcamp/Chat-Client" style={{textDecoration: "none"}}>
+<Button size="small" color="primary" style={{color: 'white'}}>
+<FontAwesomeIcon icon={faGithub} size='2x' />
+  Find on Github
+</Button>
+</a>
+<a href="https://chat-app-w.herokuapp.com/" style={{textDecoration: "none"}}> 
+<Button size="small" color="primary" style={{color: 'white'}}>
+    <FontAwesomeIcon icon={faExternalLinkAlt} size='2x' />
+  Check it out
+</Button>
+</a>
+</CardActions>
+</Card>
+</div>
+</Grid>
+
+<Grid item xs={1}  ></Grid>      
+
         <Grid item xs={1} ></Grid>
 
         <Grid item xs={10} md={4} lg={4} xl={2}  align="center">
@@ -271,7 +332,6 @@ export default function HomePage() {
         </Grid>
 
         <Grid item xs={1}  ></Grid>
-
     
         <Grid item xs={1}  ></Grid>
 
